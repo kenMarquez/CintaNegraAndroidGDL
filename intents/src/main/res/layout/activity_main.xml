@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="mx.devf.intents.MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_open_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Abrir otra pantalla" />
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Hacer llamada" />
+
+    <Button
+        android:id="@+id/btn_open_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Abrir link" />
+
+
+    <Button
+        android:id="@+id/btn_open_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:onClick="openMap"
+        android:text="Abrir mapa" />
+
+    <Button
+        android:id="@+id/btn_street_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:onClick="openMap"
+        android:text="Street view" />
+
+    <Button
+        android:id="@+id/btn_take_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:onClick="openMap"
+        android:text="Tomar foto" />
+
+    <ImageView
+        android:id="@+id/img_picture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+
+
+</LinearLayout>
