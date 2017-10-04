@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CintaNegra1GDL.iml" filepath="$PROJECT_DIR$/CintaNegra1GDL.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fragments/fragments.iml" filepath="$PROJECT_DIR$/fragments/fragments.iml" />
       <module fileurl="file://$PROJECT_DIR$/intents/intents.iml" filepath="$PROJECT_DIR$/intents/intents.iml" />
       <module fileurl="file://$PROJECT_DIR$/interaccionesvistas/interaccionesvistas.iml" filepath="$PROJECT_DIR$/interaccionesvistas/interaccionesvistas.iml" />
       <module fileurl="file://$PROJECT_DIR$/layouts/layouts.iml" filepath="$PROJECT_DIR$/layouts/layouts.iml" />

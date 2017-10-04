@@ -1,1 +1,1 @@
-include ':app', ':layouts', ':interaccionesvistas', ':intents'
+include ':app', ':layouts', ':interaccionesvistas', ':intents', ':fragments'

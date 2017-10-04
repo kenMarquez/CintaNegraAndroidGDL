@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     fun abrirStreetView() {
         val gmmIntentUri = Uri.parse("google.streetview:cbll=20.6488206,-103.4063073")
         val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
-        mapIntent.`package` = "com.google.android.apps.maps"
+        mapIntent.`package` = "com.google.androiaad.apps.maps"
         startActivity(mapIntent)
     }
 
