@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/interaccionesvistas" />
             <option value="$PROJECT_DIR$/layouts" />
             <option value="$PROJECT_DIR$/navigationview" />
+            <option value="$PROJECT_DIR$/quizapp" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
