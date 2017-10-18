@@ -11,10 +11,14 @@ import mx.devf.quizapp.R
 /**
  * Created by ken on 11/10/17.
  */
-class QuestionFragment : Fragment() {
+class QuestionFragment : Fragment(), View.OnClickListener {
+
 
     var title: String? = null
+    private var tvFalse: TextView? = null
+    private var tvTrue: TextView? = null
 
+    var respuesta = -1
 
     companion object {
 
@@ -49,7 +53,39 @@ class QuestionFragment : Fragment() {
         val tvTitle = view.findViewById<TextView>(R.id.tv_question_title)
         tvTitle.setText(title)
 
+        /**
+         * Referenciamos las vistas de false y true
+         */
+        tvFalse = view.findViewById<TextView>(R.id.question_tv_false) as TextView
+        tvTrue = view.findViewById<TextView>(R.id.question_tv_true) as TextView
+
+        /**
+         * Asignamos escuchadores a los botones de false y true
+         */
+        tvFalse?.setOnClickListener(this)
+        tvTrue?.setOnClickListener(this)
+
+
+
         return view
+    }
+
+    override fun onClick(view: View) {
+        /**
+         * Swich de las vistas que asignamos el escuchador
+         */
+        when (view.id) {
+            R.id.question_tv_false -> {
+                respuesta = 0
+                tvTrue?.setBackgroundResource(R.color.btn_unselected)
+                tvFalse?.setBackgroundResource(R.color.btn_selected)
+            }
+            R.id.question_tv_true -> {
+                respuesta = 1
+                tvTrue?.setBackgroundResource(R.color.btn_selected)
+                tvFalse?.setBackgroundResource(R.color.btn_unselected)
+            }
+        }
     }
 
 }

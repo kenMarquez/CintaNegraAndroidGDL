@@ -1,6 +1,5 @@
 package mx.devf.quizapp
 
-import android.app.FragmentTransaction
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
@@ -50,8 +49,8 @@ class PlayActivity : AppCompatActivity(), View.OnClickListener {
     private fun changeFragment(title: String) {
         val contadorFragment = QuestionFragment.newInstance(title)
         supportFragmentManager.beginTransaction()
+                .setCustomAnimations(R.anim.slide_right_enter, R.anim.slide_left_exit)
                 .replace(R.id.container, contadorFragment)
-                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                 .commit()
     }
 
